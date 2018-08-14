@@ -567,9 +567,9 @@ func (c *DocumentController) DownloadAttachment() {
 		// 如果不是超级管理员则判断权限
 		if c.Member == nil || c.Member.Role != conf.MemberSuperRole {
 			// 如果项目是私有的，并且 token 不正确
-			if (book.PrivatelyOwned == 1 && token == "") || (book.PrivatelyOwned == 1 && book.PrivateToken != token) {
-				c.ShowErrorPage(403,"权限不足")
-			}
+			//if (book.PrivatelyOwned == 1 && token == "") || (book.PrivatelyOwned == 1 && book.PrivateToken != token) {
+			//	c.ShowErrorPage(403,"权限不足")
+			//}
 		}
 
 		bookId = book.BookId
