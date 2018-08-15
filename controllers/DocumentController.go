@@ -539,7 +539,7 @@ func (c *DocumentController) DownloadAttachment() {
 
 	identify := c.Ctx.Input.Param(":key")
 	attachId, _ := strconv.Atoi(c.Ctx.Input.Param(":attach_id"))
-	token := c.GetString("token")
+	//token := c.GetString("token")
 
 	memberId := 0
 
